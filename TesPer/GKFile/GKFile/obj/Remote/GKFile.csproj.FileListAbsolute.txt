@@ -1,0 +1,13 @@
+C:\Users\xe123\Desktop\Dean\project\Library\File\GKFile\GKFile\bin\Remote\GKFile.dll
+C:\Users\xe123\Desktop\Dean\project\Library\File\GKFile\GKFile\bin\Remote\GKFile.pdb
+C:\Users\xe123\Desktop\Dean\project\Library\File\GKFile\GKFile\obj\Remote\GKFile.csproj.AssemblyReference.cache
+C:\Users\xe123\Desktop\Dean\project\Library\File\GKFile\GKFile\obj\Remote\GKFile.csproj.CoreCompileInputs.cache
+C:\Users\xe123\Desktop\Dean\project\Library\File\GKFile\GKFile\obj\Remote\GKFile.dll
+C:\Users\xe123\Desktop\Dean\project\Library\File\GKFile\GKFile\obj\Remote\GKFile.pdb
+C:\PcNOt\LIb\AnyCPU\GKFile.dll
+C:\PcNOt\LIb\AnyCPU\GKFile.pdb
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\obj\Remote\GKFile.csproj.AssemblyReference.cache
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\obj\Remote\GKFile.csproj.CoreCompileInputs.cache
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\obj\Remote\GKFile.dll
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\obj\Remote\GKFile.pdb
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\obj\Remote\GKFile.csproj.ResolveComReference.cache

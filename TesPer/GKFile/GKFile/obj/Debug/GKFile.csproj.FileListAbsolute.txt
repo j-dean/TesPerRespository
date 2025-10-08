@@ -1,0 +1,40 @@
+C:\Users\xe123\Desktop\Dean\project\Libery\File\GKFile\GKFile\bin\Debug\GKFile.dll
+C:\Users\xe123\Desktop\Dean\project\Libery\File\GKFile\GKFile\bin\Debug\GKFile.pdb
+C:\Users\xe123\Desktop\Dean\project\Libery\File\GKFile\GKFile\obj\Debug\GKFile.csproj.AssemblyReference.cache
+C:\Users\xe123\Desktop\Dean\project\Libery\File\GKFile\GKFile\obj\Debug\GKFile.csproj.CoreCompileInputs.cache
+C:\Users\xe123\Desktop\Dean\project\Libery\File\GKFile\GKFile\obj\Debug\GKFile.dll
+C:\Users\xe123\Desktop\Dean\project\Libery\File\GKFile\GKFile\obj\Debug\GKFile.pdb
+C:\Users\xe123\Desktop\Dean\project\Library\File\GKFile\GKFile\bin\Debug\GKFile.dll
+C:\Users\xe123\Desktop\Dean\project\Library\File\GKFile\GKFile\bin\Debug\GKFile.pdb
+C:\Users\xe123\Desktop\Dean\project\Library\File\GKFile\GKFile\obj\Debug\GKFile.csproj.AssemblyReference.cache
+C:\Users\xe123\Desktop\Dean\project\Library\File\GKFile\GKFile\obj\Debug\GKFile.csproj.CoreCompileInputs.cache
+C:\Users\xe123\Desktop\Dean\project\Library\File\GKFile\GKFile\obj\Debug\GKFile.dll
+C:\Users\xe123\Desktop\Dean\project\Library\File\GKFile\GKFile\obj\Debug\GKFile.pdb
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\bin\Debug\GKFile.dll
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\bin\Debug\GKFile.pdb
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\obj\Debug\GKFile.csproj.AssemblyReference.cache
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\obj\Debug\GKFile.csproj.CoreCompileInputs.cache
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\obj\Debug\GKFile.dll
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\obj\Debug\GKFile.pdb
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\obj\Debug\GKFile.csproj.ResolveComReference.cache
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\bin\Debug\Newtonsoft.Json.dll
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\bin\Debug\Newtonsoft.Json.xml
+C:\Users\xe123\OneDrive\바탕 화면\Dean\project\Library\File\GKFile\GKFile\obj\Debug\GKFile.csproj.CopyComplete
+C:\Users\GK\OneDrive\project\Library\GKFile\GKFile\GKFile\bin\Debug\GKFile.dll
+C:\Users\GK\OneDrive\project\Library\GKFile\GKFile\GKFile\bin\Debug\GKFile.pdb
+C:\Users\GK\OneDrive\project\Library\GKFile\GKFile\GKFile\bin\Debug\Newtonsoft.Json.xml
+C:\Users\GK\OneDrive\project\Library\GKFile\GKFile\GKFile\obj\Debug\GKFile.csproj.AssemblyReference.cache
+C:\Users\GK\OneDrive\project\Library\GKFile\GKFile\GKFile\obj\Debug\GKFile.csproj.ResolveComReference.cache
+C:\Users\GK\OneDrive\project\Library\GKFile\GKFile\GKFile\obj\Debug\GKFile.csproj.CoreCompileInputs.cache
+C:\Users\GK\OneDrive\project\Library\GKFile\GKFile\GKFile\obj\Debug\GKFile.csproj.CopyComplete
+C:\Users\GK\OneDrive\project\Library\GKFile\GKFile\GKFile\obj\Debug\GKFile.dll
+C:\Users\GK\OneDrive\project\Library\GKFile\GKFile\GKFile\obj\Debug\GKFile.pdb
+D:\project\00_library\GK\GKFile\GKFile\GKFile\bin\Debug\GKFile.dll
+D:\project\00_library\GK\GKFile\GKFile\GKFile\bin\Debug\GKFile.pdb
+D:\project\00_library\GK\GKFile\GKFile\GKFile\bin\Debug\Newtonsoft.Json.xml
+D:\project\00_library\GK\GKFile\GKFile\GKFile\obj\Debug\GKFile.csproj.AssemblyReference.cache
+D:\project\00_library\GK\GKFile\GKFile\GKFile\obj\Debug\GKFile.csproj.ResolveComReference.cache
+D:\project\00_library\GK\GKFile\GKFile\GKFile\obj\Debug\GKFile.csproj.CoreCompileInputs.cache
+D:\project\00_library\GK\GKFile\GKFile\GKFile\obj\Debug\GKFile.csproj.Up2Date
+D:\project\00_library\GK\GKFile\GKFile\GKFile\obj\Debug\GKFile.dll
+D:\project\00_library\GK\GKFile\GKFile\GKFile\obj\Debug\GKFile.pdb
