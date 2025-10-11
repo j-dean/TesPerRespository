@@ -29,40 +29,6 @@ namespace TesPer
 		/* ----------------------------------------------------------------------------- */
 		// Enum 
 		/* ----------------------------------------------------------------------------- */
-		//public enum _eDataSet
-		//{
-		//	Make	= 0,
-		//	Remove	= 1,
-		//	Base	= 2,
-		//	End
-		//}
-
-
-		//public enum _ePassSet
-		//{
-		//	Base = 0,
-		//	Will = 1,
-		//	Not = 2,
-		//	End
-		//}
-
-		//public enum _eShowEnglish
-		//{
-		//	Base = 0,
-		//	Pass = 1,
-		//	No = 2,
-		//	end
-		//}
-
-		//public enum _eTestMode
-		//{
-		//	/// <summary> 이해, 테스트 </summary>
-		//	RComprehension = 0,
-		//	/// <summary> 이해, 테스트 </summary>
-		//	LComprehension = 1,
-		//	End
-		//}
-	
 
 
 		/* ----------------------------------------------------------------------------- */

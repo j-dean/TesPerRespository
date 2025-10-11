@@ -84,6 +84,7 @@ namespace TesPer
             this.btn_OpenSentence = new System.Windows.Forms.Button();
             this.btn_ShowEnglish = new System.Windows.Forms.Button();
             this.buttonReference = new System.Windows.Forms.Button();
+            this.button_Modify = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -333,7 +334,7 @@ namespace TesPer
             this.ch_HintShow.AutoSize = true;
             this.ch_HintShow.Checked = true;
             this.ch_HintShow.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ch_HintShow.Location = new System.Drawing.Point(475, 592);
+            this.ch_HintShow.Location = new System.Drawing.Point(11, 38);
             this.ch_HintShow.Name = "ch_HintShow";
             this.ch_HintShow.Size = new System.Drawing.Size(79, 16);
             this.ch_HintShow.TabIndex = 65;
@@ -402,7 +403,7 @@ namespace TesPer
             this.ch_ShowKorean.AutoSize = true;
             this.ch_ShowKorean.Checked = true;
             this.ch_ShowKorean.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ch_ShowKorean.Location = new System.Drawing.Point(608, 592);
+            this.ch_ShowKorean.Location = new System.Drawing.Point(144, 38);
             this.ch_ShowKorean.Name = "ch_ShowKorean";
             this.ch_ShowKorean.Size = new System.Drawing.Size(99, 16);
             this.ch_ShowKorean.TabIndex = 78;
@@ -414,7 +415,7 @@ namespace TesPer
             this.ch_ShowEnglish.AutoSize = true;
             this.ch_ShowEnglish.Checked = true;
             this.ch_ShowEnglish.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ch_ShowEnglish.Location = new System.Drawing.Point(608, 614);
+            this.ch_ShowEnglish.Location = new System.Drawing.Point(144, 60);
             this.ch_ShowEnglish.Name = "ch_ShowEnglish";
             this.ch_ShowEnglish.Size = new System.Drawing.Size(102, 16);
             this.ch_ShowEnglish.TabIndex = 79;
@@ -426,7 +427,7 @@ namespace TesPer
             this.ch_ShowReference.AutoSize = true;
             this.ch_ShowReference.Checked = true;
             this.ch_ShowReference.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ch_ShowReference.Location = new System.Drawing.Point(475, 613);
+            this.ch_ShowReference.Location = new System.Drawing.Point(11, 59);
             this.ch_ShowReference.Name = "ch_ShowReference";
             this.ch_ShowReference.Size = new System.Drawing.Size(117, 16);
             this.ch_ShowReference.TabIndex = 80;
@@ -467,7 +468,7 @@ namespace TesPer
             this.edit_SentenceCnt.Name = "edit_SentenceCnt";
             this.edit_SentenceCnt.Size = new System.Drawing.Size(49, 21);
             this.edit_SentenceCnt.TabIndex = 84;
-            this.edit_SentenceCnt.Text = "3";
+            this.edit_SentenceCnt.Text = "1";
             // 
             // label17
             // 
@@ -603,11 +604,22 @@ namespace TesPer
             this.buttonReference.UseVisualStyleBackColor = true;
             this.buttonReference.Click += new System.EventHandler(this.buttonReference_Click);
             // 
+            // button_Modify
+            // 
+            this.button_Modify.Location = new System.Drawing.Point(11, 533);
+            this.button_Modify.Name = "button_Modify";
+            this.button_Modify.Size = new System.Drawing.Size(75, 28);
+            this.button_Modify.TabIndex = 89;
+            this.button_Modify.Text = "Modify";
+            this.button_Modify.UseVisualStyleBackColor = true;
+            this.button_Modify.Click += new System.EventHandler(this.button_Modify_Click);
+            // 
             // CDlg_TesperLong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1216, 874);
+            this.Controls.Add(this.button_Modify);
             this.Controls.Add(this.buttonReference);
             this.Controls.Add(this.btn_ShowEnglish);
             this.Controls.Add(this.btn_OpenSentence);
@@ -728,6 +740,7 @@ namespace TesPer
         private System.Windows.Forms.Button btn_OpenSentence;
         private System.Windows.Forms.Button btn_ShowEnglish;
         private System.Windows.Forms.Button buttonReference;
+        private System.Windows.Forms.Button button_Modify;
     }
 }
 

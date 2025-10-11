@@ -55,7 +55,7 @@ namespace TesPer
         /* ----------------------------------------------------------------------------- */
         // Field
         /* ----------------------------------------------------------------------------- */
-        private CTesPer     m_clsTesPer         = new CTesPer();
+        private CTesPerSystem     m_clsTesPer         = new CTesPerSystem();
         private CGKLogger   m_clsLogger         = null;
         private bool        m_bEnglishShown     = false;
         private bool        m_bKoreanShown      = false;
@@ -256,7 +256,6 @@ namespace TesPer
 
             edit_English.ForeColor = Color.Blue;
             btn_HintShow.BackColor = SystemColors.Control;
-            //btn_Apply.BackColor = SystemColors.Control;
             btn_TestDataModify.BackColor = SystemColors.Control;
 
             lb_Hint.Text = "Hint";
@@ -540,6 +539,32 @@ namespace TesPer
         private void btn_ShowEnglish_Click_1(object sender , EventArgs e)
         {
 
+        }
+
+        private void button_Modify_Click(object sender , EventArgs e)
+        {
+
+            bool bModify = true;
+
+            if (!m_bEnglishShown || !m_bKoreanShown)
+            {
+                if (MessageBox.Show("" , "alarm" , MessageBoxButtons.OKCancel) != DialogResult.OK)
+                {
+                    bModify = false;
+                }
+            }
+
+            if (bModify)
+            {
+                CTestData clsTestData = new CTestData();
+                clsTestData.m_strKorean = edit_KorText.Text;
+                clsTestData.m_strReference = edit_Reference.Text;
+                clsTestData.m_strEnglish = edit_English.Text;
+
+                m_clsTesPer.Modify(clsTestData);
+
+                btn_TestDataModify.BackColor = Color.Red;
+            }
         }
     }
 }

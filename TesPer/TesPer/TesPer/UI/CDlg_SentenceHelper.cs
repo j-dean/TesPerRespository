@@ -42,7 +42,7 @@ namespace TesPer
         /* ----------------------------------------------------------------------------- */
         private bool m_bEnglishShown = false;
         private bool m_bKoreanShown = false;
-        private CTesPer m_clsTesPer = null;
+        private CTesPerSystem m_clsTesPer = null;
         IntPtr m_pContext = IntPtr.Zero;
         private int m_nCurrentIdx = 0;
         /* ----------------------------------------------------------------------------- */
@@ -54,7 +54,7 @@ namespace TesPer
         // Constructor
         /* ----------------------------------------------------------------------------- */
 
-        public CDlg_SentenceHelper(CTesPer clsTesPer, IntPtr pContext, int nCurrentIdx)
+        public CDlg_SentenceHelper(CTesPerSystem clsTesPer, IntPtr pContext, int nCurrentIdx)
         {
             m_pContext = pContext;
             m_clsTesPer = clsTesPer;

@@ -14,7 +14,7 @@ using static TesPer.CTestSection;
 
 namespace TesPer
 {
-    public class CTesPer
+    public class CTesPerSystem
     {
         public delegate void Delegate_Compared(bool bReuslt , int nCnt);
         public delegate void Delegate_Compare(bool bOK, int nKeyIdx, string strCurrentCpm, List<string> strWpm);
@@ -25,22 +25,18 @@ namespace TesPer
         /* ----------------------------------------------------------------------------- */
         private CTestSection            m_Testion               = new CTestSection();
         private CEduContent			    m_clsEduContent			= new CEduContent();
-        private List<int>               m_listRandomIdxArray = new List<int>();
-        //private CGKTask                 m_tWpmChecker           = null;
-        private Stopwatch               m_swWpm = new Stopwatch();
+        private List<int>               m_listRandomIdxArray    = new List<int>();
+        private Stopwatch               m_swWpm                 = new Stopwatch();
   
 
 
         private int					    m_nCurrentRandomIdx		= 0;
-        private int                     m_nIdxOffset = 0;
+        private int                     m_QuestionCnt            = 0;
 
 		private int					    m_nOkCnt                = 0;
 		private int					    m_nNgCnt                = 0;
 		private bool				    m_bRandomChecked		= true;
-		//private bool				    m_bIsCopare				= false;
 		private bool				    m_bExamSuccess			= true;
-		//private bool				    m_bTypingPractice		= false;
-		//private bool				    m_bShownEnglish			= false;
 		private string				    m_strCurrentlyPath		= string.Empty;
         private string                  m_strSafeFileName       = string.Empty;
         private Delegate_Compare        m_hCompared             = null;
@@ -93,7 +89,7 @@ namespace TesPer
             }
         }
 
-        public CTesPer()
+        public CTesPerSystem()
         {
             //m_tWpmChecker = new CGKTask(WphChecker, 0);
         }
@@ -322,7 +318,7 @@ namespace TesPer
             DirectoryInfo clsCurrentDirInfo = new DirectoryInfo(strFileFath);
             string strCopyPath = clsCurrentDirInfo.Parent.FullName + "\\" + Path.GetFileNameWithoutExtension(strSafeFileName) + "copy.ini";
  
-            m_nIdxOffset = nIdxOffset;
+            m_QuestionCnt = nIdxOffset;
             m_nOkCnt = 0;
             m_nNgCnt = 0;
 
@@ -371,7 +367,7 @@ namespace TesPer
             int nStandardIdx = m_nCurrentRandomIdx;
             strValue = string.Empty;
 
-            if (m_nIdxOffset == 0)
+            if (m_QuestionCnt == 0)
             {
                 ReturnIdx(m_nCurrentRandomIdx , ref nRandomVal);
                 m_Testion.GetOriginData(eKeyType , nRandomVal , ref strData);
@@ -379,7 +375,7 @@ namespace TesPer
             }
             else
             {
-                for (int nOffCnt = 0 ; nOffCnt < m_nIdxOffset ; nOffCnt++)
+                for (int nOffCnt = 0 ; nOffCnt < m_QuestionCnt ; nOffCnt++)
                 {
                     nRandomVal = 0;
 
@@ -492,7 +488,7 @@ namespace TesPer
                 {
                     bool bNext = true;
 
-                    for (int nCnt = 0 ;nCnt < m_nIdxOffset ;nCnt++)
+                    for (int nCnt = 0 ;nCnt < m_QuestionCnt ;nCnt++)
                     {
                         if (! NextSequence())
                         {

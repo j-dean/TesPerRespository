@@ -54,7 +54,7 @@ namespace TesPer
         /* ----------------------------------------------------------------------------- */
         // Field
         /* ----------------------------------------------------------------------------- */
-        private CTesPer     m_clsTesPer         = new CTesPer();
+        private CTesPerSystem     m_clsTesPer         = new CTesPerSystem();
         private CGKLogger   m_clsLogger         = null;
         private bool        m_bEnglishShown     = false;
         private bool        m_bKoreanShown           = false;
