@@ -55,10 +55,11 @@ namespace TesPer
         /* ----------------------------------------------------------------------------- */
         // Field
         /* ----------------------------------------------------------------------------- */
-        private CTesPerSystem     m_clsTesPer         = new CTesPerSystem();
-        private CGKLogger   m_clsLogger         = null;
-        private bool        m_bEnglishShown     = false;
-        private bool        m_bKoreanShown      = false;
+        private CTesPerSystem   m_clsTesPer         = new CTesPerSystem();
+        private CGKLogger       m_clsLogger         = null;
+        private CTestData       _clsCurrentDatas    = new CTestData();
+        private bool            m_bEnglishShown     = false;
+        private bool            m_bKoreanShown      = false;
         IntPtr m_pContext = IntPtr.Zero;
         /* ----------------------------------------------------------------------------- */
         // Properties 
@@ -108,7 +109,7 @@ namespace TesPer
                 string strHint          = string.Empty;
                 string strReference     = string.Empty;
                 
-                edit_CurrentKeyIdx.Text = nCurrentIdx.ToString();
+                edit_CurrentKeyIdx.Text = (nCurrentIdx + 2).ToString();
                 lb_CurrentCpm.Text      = strCurrentCpm;
 
                 UINextQuestionShowSetting();
@@ -228,7 +229,7 @@ namespace TesPer
 
         private void Pass()
         {
-            int nPassedIdx = int.Parse(edit_CurrentKeyIdx.Text);
+            int nPassedIdx = int.Parse(edit_CurrentKeyIdx.Text) - 2;
             nPassedIdx++;
 
             m_clsTesPer.Pass(nPassedIdx);
@@ -253,6 +254,7 @@ namespace TesPer
         /* ----------------------------------------------------------------------------- */
         private void UINextQuestionShowSetting()
         {
+          
 
             edit_English.ForeColor = Color.Blue;
             btn_HintShow.BackColor = SystemColors.Control;
@@ -264,11 +266,23 @@ namespace TesPer
 
             m_bEnglishShown = ch_ShowEnglish.Checked;
             m_bKoreanShown = ch_ShowKorean.Checked;
+            string strEnglish = string.Empty;
+            string strReference = string.Empty;
+            string strKorea = string.Empty;
+        
+            m_clsTesPer.GetData(_eKeyType.Hint , ref strEnglish);
+            m_clsTesPer.GetData(_eKeyType.Ref , ref strReference);
+            m_clsTesPer.GetData(_eKeyType.Kor , ref strKorea);
+            m_clsTesPer.GetData(_eKeyType.Eng , ref strEnglish);
+
+            _clsCurrentDatas.m_strEnglish = strEnglish;
+            _clsCurrentDatas.m_strKorean = strKorea;
+            _clsCurrentDatas.m_strReference = strReference;
 
             if (ch_HintShow.Checked)
             {
-                string strEnglish = string.Empty;
-                m_clsTesPer.GetData(_eKeyType.Hint , ref strEnglish);
+              
+             
                 edit_Hint.Text = strEnglish;
             }
             else
@@ -279,9 +293,9 @@ namespace TesPer
 
             if (ch_ShowReference.Checked)
             {
-                string strEnglish = string.Empty;
-                m_clsTesPer.GetData(_eKeyType.Ref , ref strEnglish);
-                edit_Reference.Text = strEnglish;
+              
+              
+                edit_Reference.Text = strReference;
             }
             else
             {
@@ -290,8 +304,7 @@ namespace TesPer
 
             if (ch_ShowKorean.Checked)
             {
-                string strKorea = string.Empty;
-                m_clsTesPer.GetData(_eKeyType.Kor , ref strKorea);
+               
                 edit_KorText.Text = strKorea;
             }
             else
@@ -301,8 +314,8 @@ namespace TesPer
 
             if (ch_ShowEnglish.Checked)
             {
-                string strEnglish = string.Empty;
-                m_clsTesPer.GetData(_eKeyType.Eng , ref strEnglish);
+                //string strEnglish = string.Empty;
+              
                 edit_English.Text = strEnglish;
             }
             else
@@ -355,9 +368,13 @@ namespace TesPer
             string strTimelist = string.Empty;
             string strDataCnt = string.Empty;
             string[] strSectionNames = null;
+            int nQuestionCnt = int.Parse(edit_SentenceCnt.Text);
+
             List<string> strLog = new List<string>();
             openFileDialog.InitialDirectory = Application.StartupPath + "\\Data";
             openFileDialog.Filter = "exel (*.xlsx) |  *.xlsx; | 모든 파일 (*.*) | *.*";
+            
+           
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -370,7 +387,7 @@ namespace TesPer
                    strPath ,
                    strSafeFileName ,
                    rbtn_IndexRandom.Checked ,
-                    int.Parse(edit_SentenceCnt.Text),
+                   nQuestionCnt ,
                    0 ,
                    int.Parse(edit_SectionCnt.Text) ,
                    ref nKeyCount ,
@@ -405,8 +422,18 @@ namespace TesPer
                     MessageBox.Show("OpenError");
                 }
             }
+
+
+            if (nQuestionCnt == 1)
+            {
+                button_Modify.Enabled = true;
+            }
+            else
+            {
+                button_Modify.Enabled = false;
+            }
         }
-    
+
         private void Form1_KeyDown(object sender , KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -556,12 +583,7 @@ namespace TesPer
 
             if (bModify)
             {
-                CTestData clsTestData = new CTestData();
-                clsTestData.m_strKorean = edit_KorText.Text;
-                clsTestData.m_strReference = edit_Reference.Text;
-                clsTestData.m_strEnglish = edit_English.Text;
-
-                m_clsTesPer.Modify(clsTestData);
+                m_clsTesPer.Modify(_clsCurrentDatas);
 
                 btn_TestDataModify.BackColor = Color.Red;
             }

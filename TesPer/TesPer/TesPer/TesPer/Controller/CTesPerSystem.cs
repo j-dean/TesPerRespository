@@ -29,9 +29,8 @@ namespace TesPer
         private Stopwatch               m_swWpm                 = new Stopwatch();
   
 
-
         private int					    m_nCurrentRandomIdx		= 0;
-        private int                     m_QuestionCnt            = 0;
+        private int                     m_QuestionCnt           = 0;
 
 		private int					    m_nOkCnt                = 0;
 		private int					    m_nNgCnt                = 0;
@@ -284,7 +283,6 @@ namespace TesPer
                 clsIniFile.WriteString( m_clsEduContent.m_listclsCulCom[0].m_strName , _eKeyType.Eng.ToString() + nRandomVal.ToString() , clsTestData.m_strEnglish);
                 clsIniFile.WriteString( m_clsEduContent.m_listclsCulCom[0].m_strName , _eKeyType.Kor.ToString() + nRandomVal.ToString() , clsTestData.m_strKorean);
                 clsIniFile.WriteString( m_clsEduContent.m_listclsCulCom[0].m_strName , _eKeyType.Ref.ToString() + nRandomVal.ToString() , clsTestData.m_strReference);
-                //clsIniFile.WriteString(_eKeyType.Log.ToString() + "_" + nIdx.ToString() , m_nLogCount.ToString() , strWpm);
             }
         }
 
@@ -360,6 +358,7 @@ namespace TesPer
             PassesNext(ref nRandomVal);
         }
 
+   
         public void GetData(_eKeyType eKeyType , ref string strValue)
         {
             int nRandomVal = 0;
@@ -488,7 +487,7 @@ namespace TesPer
                 {
                     bool bNext = true;
 
-                    for (int nCnt = 0 ;nCnt < m_QuestionCnt ;nCnt++)
+                    for (int nCnt = 0 ; nCnt < m_QuestionCnt ;nCnt++)
                     {
                         if (! NextSequence())
                         {
@@ -496,9 +495,9 @@ namespace TesPer
                             break;
                         }
                     }
+
                     if (bNext)
                     {
-
                         Compared(bRet , m_nCurrentRandomIdx , strSetText.Count());
                     }
                     else

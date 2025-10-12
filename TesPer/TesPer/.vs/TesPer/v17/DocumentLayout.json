@@ -3,27 +3,46 @@
   "WorkspaceRootPath": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|d:\\project\\gittesper\\tesper\\tesper\\tesper\\tesper\\controller\\ctespersystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\tesper\\controller\\ctespersystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|D:\\Project\\GitTesPer\\TesPer\\TesPer\\tesper\\ui\\cdlg_tesperlong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|d:\\project\\gittesper\\tesper\\tesper\\tesper\\ui\\cdlg_tesperlong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\ui\\cdlg_tesperlong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|d:\\project\\gittesper\\tesper\\tesper\\tesper\\tesper\\controller\\ctestsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\tesper\\controller\\ctestsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|d:\\project\\gittesper\\tesper\\tesper\\tesper\\ui\\cdlg_sentencehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\ui\\cdlg_sentencehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|d:\\project\\gittesper\\tesper\\tesper\\tesper\\ui\\cdlg_tesperlong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\ui\\cdlg_tesperlong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|d:\\project\\gittesper\\tesper\\tesper\\tesper\\ui\\cdlg_tesper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|D:\\Project\\GitTesPer\\TesPer\\TesPer\\tesper\\ui\\cdlg_testion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\ui\\cdlg_testion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|D:\\Project\\GitTesPer\\TesPer\\TesPer\\tesper\\tesper\\controller\\ctespersystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\tesper\\controller\\ctespersystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3FBCBB9-52C6-4BC3-81DA-BC7B8BA71C45}|..\\GKFile\\GKFile\\GKForm.csproj|d:\\project\\gittesper\\tesper\\gkfile\\gkfile\\cpnexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|D:\\Project\\GitTesPer\\TesPer\\TesPer\\tesper\\tesper\\data\\ceducontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\tesper\\data\\ceducontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|D:\\Project\\GitTesPer\\TesPer\\TesPer\\tesper\\ui\\cdlg_createcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\ui\\cdlg_createcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|D:\\Project\\GitTesPer\\TesPer\\TesPer\\tesper\\ui\\cdlg_sentencehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\ui\\cdlg_sentencehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|D:\\Project\\GitTesPer\\TesPer\\TesPer\\tesper\\ui\\cdlg_sentencehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\ui\\cdlg_sentencehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|D:\\Project\\GitTesPer\\TesPer\\TesPer\\tesper\\tesper\\controller\\ctestsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\tesper\\controller\\ctestsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|D:\\Project\\GitTesPer\\TesPer\\TesPer\\tesper\\ui\\cdlg_tesper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\ui\\cdlg_tesper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -39,22 +58,6 @@
       "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\ui\\cdlg_tesperlong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|D:\\Project\\GitTesPer\\TesPer\\TesPer\\tesper\\tesper\\data\\ceducontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\tesper\\data\\ceducontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|D:\\Project\\GitTesPer\\TesPer\\TesPer\\tesper\\ui\\cdlg_createcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\ui\\cdlg_createcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|D:\\Project\\GitTesPer\\TesPer\\TesPer\\tesper\\ui\\cdlg_testion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\ui\\cdlg_testion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|D:\\Project\\GitTesPer\\TesPer\\TesPer\\tesper\\ui\\cdlg_sentencehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6FBCD29A-B78A-4E2E-8A4A-8060D85E8481}|TesPer\\TesPer.csproj|solutionrelative:tesper\\ui\\cdlg_sentencehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dean\\Project\\Library\\VoEquipment93\\Sample\\MultyMotionExample\\MultyMotion\\MultyMotion\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -67,55 +70,52 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 274,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 201,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CTestSection.cs",
-              "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\TesPer\\Controller\\CTestSection.cs",
-              "RelativeDocumentMoniker": "TesPer\\TesPer\\Controller\\CTestSection.cs",
-              "ToolTip": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\TesPer\\Controller\\CTestSection.cs",
-              "RelativeToolTip": "TesPer\\TesPer\\Controller\\CTestSection.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAANsAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T23:40:41.303Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
+              "Title": "CTestSection.cs",
+              "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\TesPer\\Controller\\CTestSection.cs",
+              "RelativeDocumentMoniker": "TesPer\\TesPer\\Controller\\CTestSection.cs",
+              "ToolTip": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\TesPer\\Controller\\CTestSection.cs",
+              "RelativeToolTip": "TesPer\\TesPer\\Controller\\CTestSection.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAA5wPQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T23:40:41.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CTesPerSystem.cs",
               "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\TesPer\\Controller\\CTesPerSystem.cs",
               "RelativeDocumentMoniker": "TesPer\\TesPer\\Controller\\CTesPerSystem.cs",
               "ToolTip": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\TesPer\\Controller\\CTesPerSystem.cs",
               "RelativeToolTip": "TesPer\\TesPer\\Controller\\CTesPerSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAIwAQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T01:47:57.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-11T01:47:57.391Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "CDlg_SentenceHelper.cs",
               "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_SentenceHelper.cs",
               "RelativeDocumentMoniker": "TesPer\\UI\\CDlg_SentenceHelper.cs",
               "ToolTip": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_SentenceHelper.cs",
               "RelativeToolTip": "TesPer\\UI\\CDlg_SentenceHelper.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAEwJMAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAOUAAAAAAAAAAAApwAIBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T23:26:26.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-10T23:26:26.421Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "CDlg_TesperLong.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_TesperLong.cs",
               "RelativeDocumentMoniker": "TesPer\\UI\\CDlg_TesperLong.cs",
@@ -127,19 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CDlg_CreateContent.cs",
-              "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_CreateContent.cs",
-              "RelativeDocumentMoniker": "TesPer\\UI\\CDlg_CreateContent.cs",
-              "ToolTip": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_CreateContent.cs",
-              "RelativeToolTip": "TesPer\\UI\\CDlg_CreateContent.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAtwEwAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T08:30:18.169Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "CDlg_Tesper.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_Tesper.cs",
               "RelativeDocumentMoniker": "TesPer\\UI\\CDlg_Tesper.cs",
@@ -151,7 +139,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "CDlg_CreateContent.cs",
+              "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_CreateContent.cs",
+              "RelativeDocumentMoniker": "TesPer\\UI\\CDlg_CreateContent.cs",
+              "ToolTip": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_CreateContent.cs",
+              "RelativeToolTip": "TesPer\\UI\\CDlg_CreateContent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T08:30:18.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CDlg_SentenceHelper.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_SentenceHelper.cs",
+              "RelativeDocumentMoniker": "TesPer\\UI\\CDlg_SentenceHelper.cs",
+              "ToolTip": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_SentenceHelper.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "TesPer\\UI\\CDlg_SentenceHelper.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T09:40:51.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "CDlg_Tesper.cs",
               "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_Tesper.cs",
               "RelativeDocumentMoniker": "TesPer\\UI\\CDlg_Tesper.cs",
@@ -164,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "CPnExcel.cs",
               "DocumentMoniker": "D:\\Dean\\Project\\Project\\private\\TesPer\\Project\\TesPer250808\\GKFile\\GKFile\\CPnExcel.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Dean\\Project\\Project\\private\\TesPer\\Project\\TesPer250808\\GKFile\\GKFile\\CPnExcel.cs",
@@ -175,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\Program.cs",
               "RelativeDocumentMoniker": "TesPer\\Program.cs",
@@ -183,24 +194,11 @@
               "RelativeToolTip": "TesPer\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T03:56:40.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-09T03:56:40.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CDlg_SentenceHelper.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_SentenceHelper.cs",
-              "RelativeDocumentMoniker": "TesPer\\UI\\CDlg_SentenceHelper.cs",
-              "ToolTip": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_SentenceHelper.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "TesPer\\UI\\CDlg_SentenceHelper.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T09:40:51.95Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Dean\\Project\\Library\\VoEquipment93\\Sample\\MultyMotionExample\\MultyMotion\\MultyMotion\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Dean\\Project\\Library\\VoEquipment93\\Sample\\MultyMotionExample\\MultyMotion\\MultyMotion\\Program.cs",
@@ -212,49 +210,61 @@
           ]
         },
         {
-          "DockedWidth": 126,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 199,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
+              "Title": "CPnExcel.cs",
+              "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\GKFile\\GKFile\\CPnExcel.cs",
+              "RelativeDocumentMoniker": "..\\GKFile\\GKFile\\CPnExcel.cs",
+              "ToolTip": "D:\\Project\\GitTesPer\\TesPer\\GKFile\\GKFile\\CPnExcel.cs",
+              "RelativeToolTip": "..\\GKFile\\GKFile\\CPnExcel.cs",
+              "ViewState": "AgIAACwBAAAAAAAAAAAEwJkBAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T11:48:16.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CDlg_Testion.cs",
               "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_Testion.cs",
               "RelativeDocumentMoniker": "TesPer\\UI\\CDlg_Testion.cs",
               "ToolTip": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_Testion.cs",
               "RelativeToolTip": "TesPer\\UI\\CDlg_Testion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-10T08:14:40.324Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CDlg_TesperLong.cs",
               "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_TesperLong.cs",
               "RelativeDocumentMoniker": "TesPer\\UI\\CDlg_TesperLong.cs",
               "ToolTip": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_TesperLong.cs",
               "RelativeToolTip": "TesPer\\UI\\CDlg_TesperLong.cs",
-              "ViewState": "AgIAANwBAAAAAAAAAAAgwOoBAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAMwOYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T03:56:44.823Z",
+              "WhenOpened": "2025-10-11T11:26:57.119Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "CEduContent.cs",
               "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\TesPer\\Data\\CEduContent.cs",
               "RelativeDocumentMoniker": "TesPer\\TesPer\\Data\\CEduContent.cs",
               "ToolTip": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\TesPer\\Data\\CEduContent.cs",
               "RelativeToolTip": "TesPer\\TesPer\\Data\\CEduContent.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAewGoAAAAIAAAA",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAgwH0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-09T04:11:07.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "CDlg_TesperLong.Designer.cs",
               "DocumentMoniker": "D:\\Project\\GitTesPer\\TesPer\\TesPer\\TesPer\\UI\\CDlg_TesperLong.Designer.cs",
               "RelativeDocumentMoniker": "TesPer\\UI\\CDlg_TesperLong.Designer.cs",

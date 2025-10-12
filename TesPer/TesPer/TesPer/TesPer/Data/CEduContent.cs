@@ -40,16 +40,16 @@ namespace TesPer
         // Variable
         /* ----------------------------------------------------------------------------- */
         public List<CEduSectionData> m_listclsCulCom = new List<CEduSectionData>();
-        //private string				m_strSoundFileName	= string.Empty;
-        //private CSound				m_clsSound			= new CSound();	
+
 
         private int nTotalCnt = 0;
         private string m_strFileName = string.Empty;
-        //private string m_strSoundPath = string.Empty;
         private string m_strMainIniPath = string.Empty;
         private string m_strChildIniPath = string.Empty;
         private string m_strHintPath = string.Empty;
         private string m_strLogPath = string.Empty;
+        private string _strFilePath = string.Empty;
+
 
         /* ----------------------------------------------------------------------------- */
         // Properties Function
@@ -103,83 +103,30 @@ namespace TesPer
             }
         }
 
+
+
         public bool LoadData(string strPath, ref int nKeyCnt)
         {
-            //bool bReturn = false;
+            bool bReturn = true;
 
 
-
-            //CGKIni clsIniFile = new CGKIni();
-            //int nSectionCnt = 0;
-            //int nlastIdx = 0;
-            //nTotalCnt = 0;
-
-            //try
-            //{
-            //    if (clsIniFile.Open(strPath))
-            //    {
-            //        m_listclsCulCom.Clear();
-
-            //        clsIniFile.ReadInt(DEF_STRING_Info , "SectionCount" , ref nSectionCnt);
-
-            //        for (int nCnt = 0 ; nCnt < nSectionCnt ; nCnt++)
-            //        {
-            //            CEduSectionData clsEduSectionData = new CEduSectionData();
-
-            //            clsIniFile.ReadString(DEF_STRING_Info , "SectionName" + nCnt.ToString() , ref clsEduSectionData.m_strName);
-            //            clsIniFile.ReadInt(DEF_STRING_Info , "Current_Index" , ref nlastIdx);
-            //            clsIniFile.ReadInt(clsEduSectionData.m_strName , _eKeyType.KeyCount.ToString() , ref nKeyCnt);
-            //            clsIniFile.ReadString(clsEduSectionData.m_strName , _eKeyType.Hint.ToString() , ref clsEduSectionData.m_strHint);
-
-            //            for (int nValueCnt = 0 ; nValueCnt < nKeyCnt ; nValueCnt++)
-            //            {
-            //                CTestData clsTestData = new CTestData();
-
-            //                clsIniFile.ReadString(clsEduSectionData.m_strName , _eKeyType.Eng.ToString() + nValueCnt.ToString() , ref clsTestData.m_strEnglish);
-            //                clsIniFile.ReadString(clsEduSectionData.m_strName , _eKeyType.Ref.ToString() + nValueCnt.ToString() , ref clsTestData.m_strReference);
-            //                clsIniFile.ReadString(clsEduSectionData.m_strName , _eKeyType.Kor.ToString() + nValueCnt.ToString() , ref clsTestData.m_strKorean);
-
-            //                clsEduSectionData.m_list_clsTestData.Add(clsTestData);
-
-            //                nTotalCnt++;
-            //            }
-
-            //            clsEduSectionData.m_lastIdx = nlastIdx;
-            //            m_listclsCulCom.Add(clsEduSectionData);
-            //        }
-            //    }
-
-
-            //    bReturn = true;
-            //}
-            //catch (Exception ex)
-            //{
-            //    bReturn = false;
-            //}
-
-            //return bReturn;
-
-
-            bool bReturn = false;
-
-
-
-            //CGKIni clsIniFile = new CGKIni();
             CEduSectionData clsEduSectionData = new CEduSectionData();
+            CPnExcel clsPnExcel1 = new CPnExcel();
+            CPnExcel clsPnExcel2 = new CPnExcel();
             int nSectionCnt = 0;
             int nlastIdx = 0;
+
             nTotalCnt = 0;
+            _strFilePath = strPath;
 
             try
             {
                 DataTable dTblInspection = new DataTable();
                 DataTable dTblInspection2 = new DataTable();
-                CPnExcel.XlsxRead(strPath ,1, ref dTblInspection);
-                CPnExcel.XlsxRead(strPath , 2 , ref dTblInspection2);
+                clsPnExcel1.XlsxRead(strPath ,1, ref dTblInspection);
+                clsPnExcel2.XlsxRead(strPath , 2 , ref dTblInspection2);
 
 
-
-                //DataRow row2 = dTblInspection2.Rows[0];
                 int RowIdx = 0;
 
                 foreach (DataRow row in dTblInspection.Rows)
@@ -219,41 +166,7 @@ namespace TesPer
                 }
 
                 m_listclsCulCom.Add(clsEduSectionData);
-                             //if (clsIniFile.Open(strPath))
-                             //{
-                             //    m_listclsCulCom.Clear();
-
-                             //    clsIniFile.ReadInt(DEF_STRING_Info , "SectionCount" , ref nSectionCnt);
-
-                             //    for (int nCnt = 0 ; nCnt < nSectionCnt ; nCnt++)
-                             //    {
-                             //        CEduSectionData clsEduSectionData = new CEduSectionData();
-
-                             //        clsIniFile.ReadString(DEF_STRING_Info , "SectionName" + nCnt.ToString() , ref clsEduSectionData.m_strName);
-                             //        clsIniFile.ReadInt(DEF_STRING_Info , "Current_Index" , ref nlastIdx);
-                             //        clsIniFile.ReadInt(clsEduSectionData.m_strName , _eKeyType.KeyCount.ToString() , ref nKeyCnt);
-                             //        clsIniFile.ReadString(clsEduSectionData.m_strName , _eKeyType.Hint.ToString() , ref clsEduSectionData.m_strHint);
-
-                             //        for (int nValueCnt = 0 ; nValueCnt < nKeyCnt ; nValueCnt++)
-                             //        {
-                             //            CTestData clsTestData = new CTestData();
-
-                             //            clsIniFile.ReadString(clsEduSectionData.m_strName , _eKeyType.Eng.ToString() + nValueCnt.ToString() , ref clsTestData.m_strEnglish);
-                             //            clsIniFile.ReadString(clsEduSectionData.m_strName , _eKeyType.Ref.ToString() + nValueCnt.ToString() , ref clsTestData.m_strReference);
-                             //            clsIniFile.ReadString(clsEduSectionData.m_strName , _eKeyType.Kor.ToString() + nValueCnt.ToString() , ref clsTestData.m_strKorean);
-
-                             //            clsEduSectionData.m_list_clsTestData.Add(clsTestData);
-
-                             //            nTotalCnt++;
-                             //        }
-
-                             //        clsEduSectionData.m_lastIdx = nlastIdx;
-                             //        m_listclsCulCom.Add(clsEduSectionData);
-                             //    }
-                             //}
-
-
-                             bReturn = true;
+      
             }
             catch (Exception ex)
             {
@@ -261,6 +174,11 @@ namespace TesPer
             }
 
             return bReturn;
+
+        }
+
+        public void Modify()
+        {
 
         }
     }

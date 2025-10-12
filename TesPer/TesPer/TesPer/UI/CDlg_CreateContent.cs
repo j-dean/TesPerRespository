@@ -67,14 +67,14 @@ namespace TesPer
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             DataTable dataTable = new DataTable();
- 
+            CPnExcel clsPnExcel = new CPnExcel();
 
             //CPnExcel.XlsxRead(strPath , ref dataTable);
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string strPath = openFileDialog.FileName;
-                CPnExcel.XlsxRead(strPath ,1, ref dataTable);
+                clsPnExcel.XlsxRead(strPath ,1, ref dataTable);
 
                 //CTestData clsTestData = new CTestData();
                 if (dataTable.Rows.Count > 0 && dataTable.Columns.Count > 0)

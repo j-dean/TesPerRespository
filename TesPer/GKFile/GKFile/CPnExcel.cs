@@ -19,7 +19,7 @@ namespace GKFile
 		static extern uint GetWindowThreadProcessId(IntPtr hWnd, out uint lpdwProcessId);
 
 		private const int DEF_INI_False = -1;
-		private Excel.Application	excelApp        = null;
+		private Excel.Application	m_excelApp        = null;
 		private Excel.Workbook		m_WorkBook        = null;
 		private Excel.Worksheet		m_WorkSheet       = null;
 		private string				m_strPath       = string.Empty;
@@ -76,18 +76,18 @@ namespace GKFile
 					directory.Create();
 				}
 
-				excelApp = new Excel.Application();
+				m_excelApp = new Excel.Application();
 
 				if (!File.Exists(strPath))
 				{
-					m_WorkBook = excelApp.Workbooks.Add();
+					m_WorkBook = m_excelApp.Workbooks.Add();
 
 					m_bFileExists = false;
 					m_bInitialized = true;
 				}
 				else
 				{
-					m_WorkBook = excelApp.Workbooks.Open
+					m_WorkBook = m_excelApp.Workbooks.Open
 					(
 						m_strPath,
 						0,
@@ -210,7 +210,9 @@ namespace GKFile
 			}
 		}
 
-		public bool ReadEnum<TEnum>(int nRow, int nCol, ref TEnum strDefaltValue) where TEnum : struct
+   
+
+        public bool ReadEnum<TEnum>(int nRow, int nCol, ref TEnum strDefaltValue) where TEnum : struct
 		{
 			bool bReturn = false;
 			TEnum eDefaltValue = strDefaltValue;
@@ -283,7 +285,7 @@ namespace GKFile
 				//object missing = Type.Missing;
 				//object noSave = false;
 				m_WorkBook.Close(false, Type.Missing, Type.Missing); // 엑셀 웨크북 종료
-				excelApp.Quit();        // 엑셀 어플리케이션 종료
+				m_excelApp.Quit();        // 엑셀 어플리케이션 종료
 			}
 			finally
 			{
@@ -319,11 +321,11 @@ namespace GKFile
 		public void Close()
 		{
 			m_WorkBook.Close(true);
-			excelApp.Quit();
+			m_excelApp.Quit();
 
 			ReleaseObject(m_WorkSheet);
 			ReleaseObject(m_WorkBook);
-			ReleaseObject(excelApp);
+			ReleaseObject(m_excelApp);
 		}
 
         private static void PathConform(string strFullName)
@@ -401,35 +403,64 @@ namespace GKFile
             return new string(bytes.Select(b => (char)b).ToArray());
         }
 
-        public static void XlsxRead(string strPath ,int nWorkSheet, ref System.Data.DataTable dtContent)
+        public void Write(int nRow , int nCol , string csData)
         {
             uint excelProcessId = 0;
             Excel.Application excelApp = null;
             Excel.Workbook wb = null;
             Excel.Worksheet ws = null;
 
+            //try
+            //{
+            //    excelApp = new Excel.Application();
+
+            //    GetWindowThreadProcessId(new IntPtr(excelApp.Hwnd) , out excelProcessId);
+
+            //    // 엑셀 파일 열기
+            //    wb = excelApp.Workbooks.Open(strPath);
+            //    //m_WorkBook = excelApp.Workbooks.Open(strPath);
+            //    // 첫번째 Worksheet
+            //    ws = wb.Worksheets.get_Item(nWorkSheet) as Excel.Worksheet;
+
+
+            //    Excel.Range range = m_WorkSheet.UsedRange;    // 사용중인 셀 범위를 가져오기
+
+            //    range.Cells[nRow + 1 , nCol + 1].Value = csData;
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    Debug.Assert(condition: false , $"Exception: {ex}");
+            //}
+        }
+
+
+        public void XlsxRead(string strPath ,int nWorkSheet, ref System.Data.DataTable dtContent)
+        {
+            Excel.Application excelApp = null;
+            Excel.Workbook wb = null;
+            Excel.Worksheet ws = null;
+            uint excelProcessId = 0;
             List<string[]> result = new List<string[]>();
+            
+
+            m_strPath = strPath;
 
             try
             {
                 // 엑셀 프로그램 실행
                 excelApp = new Excel.Application();
+                
                 GetWindowThreadProcessId(new IntPtr(excelApp.Hwnd) , out excelProcessId);
 
                 // 엑셀 파일 열기
                 wb = excelApp.Workbooks.Open(strPath);
-
+                //m_WorkBook = excelApp.Workbooks.Open(strPath);
                 // 첫번째 Worksheet
                 ws = wb.Worksheets.get_Item(nWorkSheet) as Excel.Worksheet;
-
-                // 현재 Worksheet에서 사용된 Range 전체를 선택
+            
                 Excel.Range rng = ws.UsedRange;
 
-                //int row = ws.UsedRange.EntireRow.Count;
-                //Excel.Range rng = ws.Range[ws.Cells[1, 1], ws.Cells[row, numOfColumn]];
-
-
-                // Range 데이타를 배열 (1-based array)로
                 object[,] data = (object[,])rng.Value;
 
                 for (int r = 1 ; r <= data.GetLength(0) ; r++)
@@ -464,15 +495,7 @@ namespace GKFile
                     }
 
                     dtContent.Rows.Add(dtRow);
-                    //for (int i = 0 ; i < arr.Length ; i++)
-                    //{
-                    //    if (string.IsNullOrWhiteSpace(arr[i]) == false)
-                    //    {
-                    //        result.Add(arr);
-                    //        break;
-                    //    }
-                    //}
-
+       
                 }
 
                 wb.Close(false);
@@ -481,6 +504,92 @@ namespace GKFile
             catch (Exception ex)
             {
 				Debug.Assert(false, ex.Message);
+            }
+            finally
+            {
+         
+                ReleaseObject(ws);
+                ReleaseObject(wb);
+                ReleaseObject(excelApp);
+
+                if (excelApp != null && excelProcessId > 0)
+                {
+                    Process.GetProcessById((int)excelProcessId).Kill();
+                }
+            }
+
+        }
+
+
+
+
+        public static void XlsxModify(string strPath , int nWorkSheet , ref System.Data.DataTable dtContent)
+        {
+            uint excelProcessId = 0;
+            Excel.Application excelApp = null;
+            Excel.Workbook wb = null;
+            Excel.Worksheet ws = null;
+
+            List<string[]> result = new List<string[]>();
+
+            try
+            {
+                // 엑셀 프로그램 실행
+                excelApp = new Excel.Application();
+                GetWindowThreadProcessId(new IntPtr(excelApp.Hwnd) , out excelProcessId);
+
+                // 엑셀 파일 열기
+                wb = excelApp.Workbooks.Open(strPath);
+
+                // 첫번째 Worksheet
+                ws = wb.Worksheets.get_Item(nWorkSheet) as Excel.Worksheet;
+
+                // 현재 Worksheet에서 사용된 Range 전체를 선택
+                Excel.Range rng = ws.UsedRange;
+
+                object[,] data = (object[,])rng.Value;
+
+                for (int r = 1 ; r <= data.GetLength(0) ; r++)
+                {
+                    int length = Math.Min(data.GetLength(1) , rng.Columns.Count);
+                    string[] arr = new string[length];
+
+                    for (int c = 1 ; c <= length ; c++)
+                    {
+                        dtContent.Columns.Add();
+
+                        if (data[r , c] == null)
+                        {
+                            continue;
+                        }
+                        else if (data[r , c] is string)
+                        {
+                            arr[c - 1] = data[r , c] as string;
+                        }
+                        else
+                        {
+                            arr[c - 1] = data[r , c].ToString();
+                        }
+                    }
+
+                    DataRow dtRow = dtContent.NewRow();
+
+                    for (int nCnt = 0 ; nCnt < arr.Length ; nCnt++)
+                    {
+
+                        dtRow[nCnt] = arr[nCnt];
+                    }
+
+                    dtContent.Rows.Add(dtRow);
+
+                }
+
+                wb.Close(false);
+                excelApp.Quit();
+            }
+            catch (Exception ex)
+            {
+                Debug.Assert(false , ex.Message);
             }
             finally
             {
@@ -495,9 +604,8 @@ namespace GKFile
                 }
             }
 
-            //return result.ToArray();
-
         }
+
 
         public static void CSVRead(string strPath , ref System.Data.DataTable dtContent)
         {
